@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 :root {
-  --color_black: rgb(34, 31, 31);
-  --color_dark_green: #2e3430;
-  --color_off_white: #eae7dd;
-  --color_blue: #5a858c;
+  --color_bg: #c4c4c4;
+  --color_white: #fff;
+  --color_dark: #26252d;
+  --color_partition: rgb(4, 152, 135);
 }
 
 * {
@@ -16,7 +16,7 @@
 }
 
 body {
-  background: #c4c4c4;
+  background: var(--color_bg);
   font-size: 18px;
   line-height: 25px;
 }
@@ -28,13 +28,13 @@ li {
   display: flex;
   width: 1080px;
   margin: 50px auto;
-  background: #fff;
+  background: var(--color_white);
   padding: 10px;
 }
 
 .resume_wrapper .resume_left {
   width: 35%;
-  background: #26252d;
+  background: var(--color_dark);
 }
 
 /* .resume_wrapper .resume_left .resume_image {
@@ -50,7 +50,7 @@ li {
 }
 
 .resume_wrapper .resume_title {
-  color: #fff;
+  color: var(--color_white);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
@@ -60,7 +60,7 @@ li {
 
 .resume_wrapper .resume_left .resume_info,
 a {
-  color: #b9b9be;
+  color: var(--color_bg);
 }
 
 .resume_wrapper .resume_left .resume_bottom {
@@ -69,7 +69,7 @@ a {
 
 .resume_wrapper .resume_item {
   padding: 20px 0;
-  border-bottom: 1px solid #0175b2;
+  border-bottom: 1px solid var(--color_partition);
 }
 
 .resume_wrapper .resume_item:last-child {
@@ -82,7 +82,7 @@ a {
 
 .resume_wrapper .resume_namerole .name {
   font-size: 20px;
-  color: #fff;
+  color: var(--color_white);
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 5px;
@@ -90,7 +90,7 @@ a {
 }
 
 .resume_wrapper .resume_left .resume_namerole .role {
-  color: #84838b;
+  color: var(--color_bg);
 }
 
 .resume_wrapper .resume_left .resume_contact .resume_info:last-child {
@@ -98,7 +98,7 @@ a {
 }
 
 .resume_subtitle {
-  color: #fff;
+  color: var(--color_white);
   margin-bottom: 2px;
 }
 
@@ -116,8 +116,8 @@ a {
   margin-bottom: 1rem;
 }
 .stack {
-  background: #0175b2;
-  color: white;
+  background: var(--color_partition);
+  color: var(--color_white);
   padding: 0.1rem 0.2rem;
   border-radius: 5rem;
 }
@@ -137,7 +137,7 @@ a {
 }
 
 .resume_wrapper .resume_right .resume_namerole .name {
-  color: #26252d;
+  color: var(--color_dark);
   font-size: 32px;
 }
 
@@ -148,7 +148,7 @@ a {
 }
 
 .resume_wrapper .resume_right .resume_item .resume_title {
-  color: #26252d;
+  color: var(--color_dark);
 }
 
 .resume_wrapper .resume_right .resume_data {
@@ -174,8 +174,8 @@ a {
   right: 0;
   width: 10px;
   height: 10px;
-  background: #fff;
-  border: 1px solid #26252d;
+  background: var(--color_white);
+  border: 1px solid var(--color_dark);
   border-radius: 50%;
 }
 
@@ -186,7 +186,7 @@ a {
   right: 4px;
   width: 3px;
   height: 100%;
-  background: #0175b2;
+  background: var(--color_partition);
 }
 
 .resume_wrapper .resume_right .resume_data:last-child .year:after {
@@ -222,8 +222,6 @@ a {
 
 .project-item img {
   width: 100%;
-  /* height: 150px; */
-  /* width: ; */
   object-fit: cover;
   border-radius: 8px;
   cursor: pointer;
@@ -279,15 +277,7 @@ a {
   bottom: 0;
   z-index: 999 !important;
   padding: 2rem;
-  /* transform: none !important; */
-  /* opacity: 1 !important; */
 }
-
-/* .resume_wrapper .resume_right .resmue_interests .interests .int_icon {
-  font-size: 38px;
-  color: #0175b2;
-  margin-bottom: 10px;
-} */
 
 @media screen and (max-width: 800px) {
   .resume_wrapper .resume_right .resume_namerole {
@@ -319,12 +309,6 @@ a {
   .resume_wrapper .resume_right .resume_data {
     flex-direction: column;
   }
-  /* .resume_wrapper .resume_right .resume_data .year {
-    padding: 0;
-    margin-bottom: 5px;
-    width: 100%;
-    color: #0175b2;
-  } */
   .resume_wrapper .resume_right .resume_data .year:before,
   .resume_wrapper .resume_right .resume_data .year:after {
     display: none;
@@ -333,16 +317,4 @@ a {
     width: 100%;
     padding: 0;
   }
-  /* .resume_wrapper .resume_right .resmue_interests .interests .int_icon {
-    font-size: 24px;
-  } */
-
-  /* @media (min-width: 1000px) {
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 20px;
-      margin-top: 16px;
-    }
-  } */
 }
