@@ -1,2 +1,3 @@
-# Responsive-Resume-UI-Design
-How to create the Responsive Resume Design in HTML and CSS
+# My Web CV
+
+Built with HTML and CSS
