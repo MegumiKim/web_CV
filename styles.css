@@ -27,7 +27,7 @@ li {
 .resume_wrapper {
   display: flex;
   width: 1200px;
-  margin: 50px auto;
+  margin: auto;
   background: var(--color_white);
   padding: 10px;
 }
