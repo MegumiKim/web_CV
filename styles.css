@@ -49,6 +49,9 @@ li {
   border-radius: 10%;
 }
 
+.icon {
+  fill: #fff;
+}
 .resume_wrapper .resume_title {
   color: var(--color_white);
   text-transform: uppercase;
