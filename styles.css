@@ -84,7 +84,7 @@ a {
 }
 
 .resume_wrapper .resume_namerole .name {
-  font-size: 20px;
+  font-size: 4em;
   color: var(--color_white);
   text-transform: uppercase;
   font-weight: 700;
