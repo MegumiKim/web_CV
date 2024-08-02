@@ -79,12 +79,12 @@ a {
   border-bottom: 0;
 }
 
-.resume_wrapper .resume_left {
+.resume_wrapper .resume_left .resume_namerole {
   display: none;
 }
 
 .resume_wrapper .resume_namerole .name {
-  font-size: 4em;
+  font-size: 4rem;
   color: var(--color_white);
   text-transform: uppercase;
   font-weight: 700;
