@@ -130,11 +130,6 @@ a {
   color: #26252d;
 }
 
-.resume_wrapper .resume_right .resume_namerole .name {
-  color: var(--color_dark);
-  font-size: 32px;
-}
-
 .resume_wrapper .resume_right .resume_namerole .role {
   margin-top: 0.5rem;
   font-size: 1.2rem;
